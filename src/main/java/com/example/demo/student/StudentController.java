@@ -17,6 +17,7 @@ public class StudentController {
 
     @GetMapping
     public List<Student> getStudent() {
+         System.out.println("running in StduentConfig.java getStudent.");
         return studentService.getStudents();
     }
 

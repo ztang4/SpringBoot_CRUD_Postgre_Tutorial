@@ -22,7 +22,10 @@ public class StudentService {
     }
 
     public List<Student> getStudents() {
-        return studentRepository.findAll();
+        System.out.println("tzq hi Fetching all students from database...");
+        List<Student> students = studentRepository.findAll();
+        System.out.println("Found " + students.size() + " students in database");
+        return students;
     }
 
     public void addNewStudent(Student student) {
